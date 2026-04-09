@@ -1,1 +1,1 @@
-python single_gpu.py --total_epochs 50 --save_every 5 --batch_size 128
+python single_gpu.py total_epochs 50 save_every 5 --batch_size 128
