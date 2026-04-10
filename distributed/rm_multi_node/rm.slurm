@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=krishna
 #SBATCH --partition=gpu
-#SBATCH --time=72:00:00
+##SBATCH --time=72:00:00
 
 ### e.g. request 4 nodes with 1 gpu each, totally 4 gpus (WORLD_SIZE==4)
 ### Note: --gres=gpu:x should equal to ntasks-per-node
