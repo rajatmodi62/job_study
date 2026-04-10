@@ -126,7 +126,6 @@ def main():
     sampler=sampler, 
     num_workers=8,            # Use multiple CPU cores to prepare data
     pin_memory=True,          # Faster transfer from CPU RAM to GPU VRAM
-    prefetch_factor=2
     )
     optimizer = optim.SGD(model.parameters(), lr=0.01)
     criterion = nn.MSELoss()
