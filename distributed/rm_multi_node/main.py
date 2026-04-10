@@ -53,7 +53,7 @@ def parse_args():
     parser.add_argument('--rank', default=0, type=int)
     parser.add_argument('--dist-url', default='env://', type=str)
     parser.add_argument('--dist-backend', default='nccl', type=str)
-    parser.add_argument('--local_rank', default=-1, type=int)
+    parser.add_argument('--local-rank', default=-1, type=int)
     args = parser.parse_args()
     return args
 
