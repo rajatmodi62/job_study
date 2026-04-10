@@ -50,7 +50,7 @@ def setup_distributed():
 
     
     os.environ["MASTER_ADDR"] = master_addr
-    os.environ["MASTER_PORT"] = "12330"
+    os.environ["MASTER_PORT"] = "12329"
     os.environ["RANK"] = str(rank)
     os.environ["WORLD_SIZE"] = str(world_size)
 
@@ -112,6 +112,7 @@ def main():
 
     # 1. Prepare Model
     rank, world_size, local_rank = setup_distributed()
+    print("setup done.")
     model = TenLayerNet().to(local_rank)
     model = DDP(model, device_ids=[local_rank])
     
@@ -131,8 +132,8 @@ def main():
         sampler.set_epoch(epoch)
         
         for i, (data, target) in enumerate(dataloader):
+            print("Rank {rank} processing batch {i} on GPU {local_rank}")
             data, target = data.to(local_rank), target.to(local_rank)
-            
             optimizer.zero_grad()
             output = model(data)
             loss = criterion(output, target)
