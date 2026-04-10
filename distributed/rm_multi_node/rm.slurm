@@ -1,10 +1,12 @@
 #!/bin/bash
 #SBATCH --job-name=krishna
 #SBATCH --partition=gpu
+#SBATCH --qos=preempt
+#SBATCH --partition=preempt    
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=1
 #SBATCH --gres=gpu:1
-#SBATCH --cpus-per-task=4
+#SBATCH --cpus-per-task=8
 #SBATCH --mem=64gb
 #SBATCH -C gmem48  # Removed the '=' sign
 
