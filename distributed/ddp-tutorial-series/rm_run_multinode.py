@@ -6,6 +6,7 @@ import subprocess
 import os
 import signal
 import psutil
+from datetime import timedelta
 
 def kill_process_on_port(port):
     """Finds and kills any process currently listening on the specified port."""
@@ -18,51 +19,43 @@ def kill_process_on_port(port):
         except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
             pass
 
-
 def setup_distributed():
-    print("enter..")
-    if "SLURM_PROCID" not in os.environ:
-        return 0, 1, 0
-    print("rmodi")
+    # 1. Slurm Env
     rank = int(os.environ["SLURM_PROCID"])
-    world_size = int(os.environ["SLURM_NTASKS"])
     local_rank = int(os.environ["SLURM_LOCALID"])
-    
-    # Use scontrol to get the master node name
+    world_size = int(os.environ["SLURM_NTASKS"])
+
+    # 2. Master Address Resolution
     nodelist = os.environ["SLURM_JOB_NODELIST"]
-    master_node = subprocess.check_output(
-        ["scontrol", "show", "hostnames", nodelist], 
-        text=True
-    ).splitlines()[0]
-    
-    print("found master_node")
-    # Convert node name to IP address (more reliable for handshakes)
+    # Get the hostname of the first node
+    master_node = subprocess.check_output(["scontrol", "show", "hostnames", nodelist], text=True).splitlines()[0]
+    # Convert hostname to IP for better reliability
     master_addr = socket.gethostbyname(master_node)
-    print("1", master_addr)
 
     os.environ["MASTER_ADDR"] = master_addr
-    os.environ["MASTER_PORT"] = "12348"
-    os.environ["WORLD_SIZE"] = str(world_size)
+    os.environ["MASTER_PORT"] = "12353"
     os.environ["RANK"] = str(rank)
+    os.environ["WORLD_SIZE"] = str(world_size)
 
-    print(f"Rank {rank} (Local {local_rank}) will connect to Master {master_addr}:{os.environ['MASTER_PORT']}")
-    # Use the IB interface for the control socket
-    
-    # Note: check 'ifconfig' or 'ip addr' to see if it's ib0, ibv0, etc.
-    os.environ["NCCL_IB_DISABLE"] = "0"          # Enable InfiniBand
-    os.environ["NCCL_SOCKET_IFNAME"] = "ib0"     # Use ib0 for the control socket
-    print("killing processes on port...")
-    kill_process_on_port(int(os.environ["MASTER_PORT"]))
-    print("done killing processes on port.")
+    # 3. NCCL Fixes (Correcting the variable names)
+    os.environ["NCCL_IB_DISABLE"] = "0"           # Make sure IB is NOT disabled
+    os.environ["NCCL_SOCKET_IFNAME"] = "ib0"      # Use your ib0 interface
+    os.environ["NCCL_DEBUG"] = "INFO"             # This will print the handshake details
 
-    # Initialize NCCL
-    print("Initializing process group...")
-    dist.init_process_group(backend="nccl", init_method="env://")
-    
-    print("set..")
+    print(f"Rank {rank} on {socket.gethostname()} connecting to Master {master_addr}:12353")
+
+    # 4. Init with Timeout
+    # If it doesn't connect in 2 minutes, it will crash instead of hanging
+    print("init dist..")
+    dist.init_process_group(
+        backend="nccl", 
+        init_method="env://", 
+        timeout=timedelta(minutes=2)
+    )
+    print("init complete..")
     torch.cuda.set_device(local_rank)
-    print(f"Rank {rank} (Local {local_rank}) connected to Master {master_addr}")
-    return rank, world_size, local_rank
+    print(f"Rank {rank} successfully initialized!")
+
 def cleanup():
     if dist.is_initialized():
         dist.destroy_process_group()
