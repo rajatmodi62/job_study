@@ -41,7 +41,7 @@ def setup_distributed():
     print("1", master_addr)
 
     os.environ["MASTER_ADDR"] = master_addr
-    os.environ["MASTER_PORT"] = "12351"
+    os.environ["MASTER_PORT"] = "12349"
     os.environ["WORLD_SIZE"] = str(world_size)
     os.environ["RANK"] = str(rank)
 
