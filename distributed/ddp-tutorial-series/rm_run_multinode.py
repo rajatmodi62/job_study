@@ -82,7 +82,7 @@ def cleanup():
 # --- Toy Model & Dataset ---
 
 class ToyDataset(Dataset):
-    def __len__(self): return 1000000
+    def __len__(self): return 1000000000
     def __getitem__(self, idx):
         return torch.randn(64), torch.randn(64)
 

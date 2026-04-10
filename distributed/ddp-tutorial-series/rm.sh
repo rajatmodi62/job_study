@@ -13,4 +13,4 @@
 # slurm controller 
 # gemini generated, not too happy about it. 
 
-srun CUDA_LAUNCH_BLOCKING=1 python rm_run_multinode.py
+git pull && srun --overlap python rm_run_multinode.py
