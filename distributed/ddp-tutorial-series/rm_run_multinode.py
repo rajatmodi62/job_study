@@ -132,7 +132,7 @@ def main():
         sampler.set_epoch(epoch)
         
         for i, (data, target) in enumerate(dataloader):
-            print("Rank {rank} processing batch {i} on GPU {local_rank}".format(rank=rank, i=i, local_rank=local_rank))
+            # print("Rank {rank} processing batch {i} on GPU {local_rank}".format(rank=rank, i=i, local_rank=local_rank))
             data, target = data.to(local_rank), target.to(local_rank)
             optimizer.zero_grad()
             output = model(data)
