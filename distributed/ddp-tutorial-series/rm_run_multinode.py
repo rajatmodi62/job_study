@@ -25,7 +25,7 @@ def setup_distributed():
     master_addr = socket.gethostbyname(master_node)
     
     os.environ["MASTER_ADDR"] = master_addr
-    os.environ["MASTER_PORT"] = "12355"
+    os.environ["MASTER_PORT"] = "12354"
     os.environ["WORLD_SIZE"] = str(world_size)
     os.environ["RANK"] = str(rank)
     
