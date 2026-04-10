@@ -33,6 +33,10 @@ def kill_process_on_port(port):
 def setup_distributed():
     # 1. Slurm Env
     rank = int(os.environ["SLURM_PROCID"])
+    # 2. Master Address Resolution
+    nodelist = os.environ["SLURM_JOB_NODELIST"]
+    # Get the hostname of the first node
+    master_node = subprocess.check_output(["scontrol", "show", "hostnames", nodelist], text=True).splitlines()[0]
 
     if rank == 0:
         # Force Rank 0 to identify by its primary network IP
@@ -44,11 +48,7 @@ def setup_distributed():
     local_rank = int(os.environ["SLURM_LOCALID"])
     world_size = int(os.environ["SLURM_NTASKS"])
 
-    # 2. Master Address Resolution
-    nodelist = os.environ["SLURM_JOB_NODELIST"]
-    # Get the hostname of the first node
-    master_node = subprocess.check_output(["scontrol", "show", "hostnames", nodelist], text=True).splitlines()[0]
-
+    
     os.environ["MASTER_ADDR"] = master_addr
     os.environ["MASTER_PORT"] = "12339"
     os.environ["RANK"] = str(rank)
