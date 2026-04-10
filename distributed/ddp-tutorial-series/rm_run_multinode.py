@@ -119,8 +119,15 @@ def main():
     # 2. Prepare Data with Distributed Sampler
     dataset = ToyDataset()
     sampler = DistributedSampler(dataset, num_replicas=world_size, rank=rank, shuffle=True)
-    dataloader = DataLoader(dataset, batch_size=32, sampler=sampler)
-    
+    # dataloader = DataLoader(dataset, batch_size=32, sampler=sampler)
+    dataloader = DataLoader(
+    dataset, 
+    batch_size=1024,          # Increase batch size significantly! 32 is too small for GPUs.
+    sampler=sampler, 
+    num_workers=8,            # Use multiple CPU cores to prepare data
+    pin_memory=True,          # Faster transfer from CPU RAM to GPU VRAM
+    prefetch_factor=2
+    )
     optimizer = optim.SGD(model.parameters(), lr=0.01)
     criterion = nn.MSELoss()
 
