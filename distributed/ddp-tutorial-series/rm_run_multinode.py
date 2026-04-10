@@ -33,7 +33,7 @@ def setup_distributed():
     print(f"Rank {rank} (Local {local_rank}) will connect to Master {master_addr}:{os.environ['MASTER_PORT']}")
     # Use the IB interface for the control socket
     # Note: check 'ifconfig' or 'ip addr' to see if it's ib0, ibv0, etc.
-    os.environ["NCCL_IB_DISABLE"] = "0"
+    os.environ["NCCL_IB_DISABLE"] = "ib0"
     
     # Initialize NCCL
     print("Initializing process group...")
