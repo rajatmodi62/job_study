@@ -10,6 +10,9 @@ from torch.distributed import init_process_group, destroy_process_group
 import os
 
 
+
+
+#setting up a process is neveccary 
 def ddp_setup():
     torch.cuda.set_device(int(os.environ["LOCAL_RANK"]))
     init_process_group(backend="nccl")

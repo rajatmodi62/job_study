@@ -3,12 +3,23 @@ import torch.nn.functional as F
 from torch.utils.data import Dataset, DataLoader
 from datautils import MyTrainDataset
 
+
+
+##### import distributed training #########
+
 import torch.multiprocessing as mp
 from torch.utils.data.distributed import DistributedSampler
 from torch.nn.parallel import DistributedDataParallel as DDP
 from torch.distributed import init_process_group, destroy_process_group
 import os
 
+
+
+#important to run for total
+# world size : total no of processes in a grou p
+#  rank: unique identifier of each process
+        # ranges on [0, world_size-1]
+# nccl: nvidia collective communications library
 
 def ddp_setup(rank, world_size):
     """
@@ -35,6 +46,8 @@ class Trainer:
         self.train_data = train_data
         self.optimizer = optimizer
         self.save_every = save_every
+        
+        # additional flag to wrap the model in DDP
         self.model = DDP(model, device_ids=[gpu_id])
 
     def _run_batch(self, source, targets):
@@ -54,6 +67,9 @@ class Trainer:
             self._run_batch(source, targets)
 
     def _save_checkpoint(self, epoch):
+        # since you are using DDP, 
+        # you need to access the underlying model 
+        # to get the state dict
         ckp = self.model.module.state_dict()
         PATH = "checkpoint.pt"
         torch.save(ckp, PATH)
@@ -62,6 +78,8 @@ class Trainer:
     def train(self, max_epochs: int):
         for epoch in range(max_epochs):
             self._run_epoch(epoch)
+            # this condition ensures that only master rank 0 
+            #saves the checkpoint
             if self.gpu_id == 0 and epoch % self.save_every == 0:
                 self._save_checkpoint(epoch)
 
@@ -74,6 +92,10 @@ def load_train_objs():
 
 
 def prepare_dataloader(dataset: Dataset, batch_size: int):
+    #wrapped the dataset in the distributed sampler
+    # to ensure that each process gets a different subset of the data
+    # remember to set shuffle to False when using DistributedSampler
+    # sampler will take care of shuffling the data across epochs
     return DataLoader(
         dataset,
         batch_size=batch_size,
@@ -89,6 +111,8 @@ def main(rank: int, world_size: int, save_every: int, total_epochs: int, batch_s
     train_data = prepare_dataloader(dataset, batch_size)
     trainer = Trainer(model, train_data, optimizer, rank, save_every)
     trainer.train(total_epochs)
+    #destory the process group after training is done 
+    # to free up the resources
     destroy_process_group()
 
 
@@ -101,4 +125,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     world_size = torch.cuda.device_count()
+    # automatically passes world_size is actual rank 
     mp.spawn(main, args=(world_size, args.save_every, args.total_epochs, args.batch_size), nprocs=world_size)
