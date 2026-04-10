@@ -23,19 +23,23 @@ def setup_distributed():
     print("found master_node")
     # Convert node name to IP address (more reliable for handshakes)
     master_addr = socket.gethostbyname(master_node)
-    
+    print("1", master_addr)
+
     os.environ["MASTER_ADDR"] = master_addr
     os.environ["MASTER_PORT"] = "12354"
     os.environ["WORLD_SIZE"] = str(world_size)
     os.environ["RANK"] = str(rank)
     
+    print(f"Rank {rank} (Local {local_rank}) will connect to Master {master_addr}:{os.environ['MASTER_PORT']}")
     # Use the IB interface for the control socket
     # Note: check 'ifconfig' or 'ip addr' to see if it's ib0, ibv0, etc.
     os.environ["NCCL_IB_DISABLE"] = "0"
     
     # Initialize NCCL
+    print("Initializing process group...")
     dist.init_process_group(backend="nccl", init_method="env://")
     
+    print("set..")
     torch.cuda.set_device(local_rank)
     print(f"Rank {rank} (Local {local_rank}) connected to Master {master_addr}")
     return rank, world_size, local_rank
