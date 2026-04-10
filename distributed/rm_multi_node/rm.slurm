@@ -8,7 +8,7 @@
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=1
 #SBATCH --gres=gpu:1
-#SBATCH -C=gmem48
+#SBATCH -C gmem48
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=64gb
 ##SBATCH --chdir=/scratch/shared/beegfs/your_dir/
