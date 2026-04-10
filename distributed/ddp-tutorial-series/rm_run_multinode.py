@@ -3,6 +3,21 @@ import socket
 import torch
 import torch.distributed as dist
 import subprocess
+import os
+import signal
+import psutil
+
+def kill_process_on_port(port):
+    """Finds and kills any process currently listening on the specified port."""
+    for proc in psutil.process_iter(['pid', 'name']):
+        try:
+            for conn in proc.connections(kind='inet'):
+                if conn.laddr.port == port:
+                    print(f"Found process {proc.pid} ({proc.name()}) on port {port}. Killing...")
+                    proc.send_signal(signal.SIGKILL)
+        except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
+            pass
+
 
 def setup_distributed():
     print("enter..")
@@ -29,12 +44,16 @@ def setup_distributed():
     os.environ["MASTER_PORT"] = "12353"
     os.environ["WORLD_SIZE"] = str(world_size)
     os.environ["RANK"] = str(rank)
-    
+
     print(f"Rank {rank} (Local {local_rank}) will connect to Master {master_addr}:{os.environ['MASTER_PORT']}")
     # Use the IB interface for the control socket
+    
     # Note: check 'ifconfig' or 'ip addr' to see if it's ib0, ibv0, etc.
     os.environ["NCCL_IB_DISABLE"] = "ib0"
-    
+    print("killing processes on port...")
+    kill_process_on_port(int(os.environ["MASTER_PORT"]))
+    print("done killing processes on port.")
+
     # Initialize NCCL
     print("Initializing process group...")
     dist.init_process_group(backend="nccl", init_method="env://")
