@@ -20,6 +20,7 @@ def setup_distributed():
         text=True
     ).splitlines()[0]
     
+    print("found master_node")
     # Convert node name to IP address (more reliable for handshakes)
     master_addr = socket.gethostbyname(master_node)
     
