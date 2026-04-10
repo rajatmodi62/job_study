@@ -49,7 +49,8 @@ def setup_distributed():
     # Use the IB interface for the control socket
     
     # Note: check 'ifconfig' or 'ip addr' to see if it's ib0, ibv0, etc.
-    os.environ["NCCL_IB_DISABLE"] = "ib0"
+    os.environ["NCCL_IB_DISABLE"] = "0"          # Enable InfiniBand
+    os.environ["NCCL_SOCKET_IFNAME"] = "ib0"     # Use ib0 for the control socket
     print("killing processes on port...")
     kill_process_on_port(int(os.environ["MASTER_PORT"]))
     print("done killing processes on port.")
