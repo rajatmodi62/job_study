@@ -33,7 +33,7 @@ def setup_distributed():
     master_addr = socket.gethostbyname(master_node)
 
     os.environ["MASTER_ADDR"] = master_addr
-    os.environ["MASTER_PORT"] = "12340"
+    os.environ["MASTER_PORT"] = "12339"
     os.environ["RANK"] = str(rank)
     os.environ["WORLD_SIZE"] = str(world_size)
 
@@ -56,6 +56,7 @@ def setup_distributed():
     torch.cuda.set_device(local_rank)
     print(f"Rank {rank} successfully initialized!")
 
+    return rank, world_size, local_rank
 def cleanup():
     if dist.is_initialized():
         dist.destroy_process_group()
@@ -66,7 +67,9 @@ def main():
         # Your logic here...
         print(f"Rank {rank} (Local {local_rank}) is ready.")
     finally:
+        print("entering cleanup")
         cleanup()
+        print("cleanup done")
 
 if __name__ == "__main__":
     main()
