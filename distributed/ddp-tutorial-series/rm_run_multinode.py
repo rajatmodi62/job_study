@@ -82,7 +82,7 @@ def cleanup():
 # --- Toy Model & Dataset ---
 
 class ToyDataset(Dataset):
-    def __len__(self): return 1000
+    def __len__(self): return 1000000
     def __getitem__(self, idx):
         return torch.randn(64), torch.randn(64)
 
@@ -126,7 +126,7 @@ def main():
     print(f"Rank {rank} starting training...")
 
     model.train()
-    for epoch in range(10000):
+    for epoch in range(1):
         # Mandatory for DistributedSampler to shuffle correctly every epoch
         sampler.set_epoch(epoch)
         
