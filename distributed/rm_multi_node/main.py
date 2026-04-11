@@ -43,7 +43,7 @@ class MyModel(nn.Module):
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--lr', default=1e-3, type=float, help='learning rate')
-    parser.add_argument('--batch_size', default=16, type=int, help='batch size per GPU')
+    parser.add_argument('--batch_size', default=1024*1024, type=int, help='batch size per GPU')
     parser.add_argument('--gpu', default=None, type=int)
     parser.add_argument('--start_epoch', default=0, type=int)
     parser.add_argument('--epochs', default=5, type=int)

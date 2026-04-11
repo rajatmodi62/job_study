@@ -1,0 +1,740 @@
+MASTER_ADDR=c2-1
+WORLD_SIZE=2
+Epoch: [0][0/1]	Loss: 2.3029
+Accuracy at Epoch 0: 9.9%
+Epoch: [1][0/1]	Loss: 2.3014
+Accuracy at Epoch 1: 9.6%
+Epoch: [2][0/1]	Loss: 2.3032
+Accuracy at Epoch 2: 9.6%
+Epoch: [3][0/1]	Loss: 2.2995
+Accuracy at Epoch 3: 9.6%
+Epoch: [4][0/1]	Loss: 2.3026
+Accuracy at Epoch 4: 9.6%
+Epoch: [5][0/1]	Loss: 2.3025
+Accuracy at Epoch 5: 10.0%
+Epoch: [6][0/1]	Loss: 2.2973
+Accuracy at Epoch 6: 10.0%
+Epoch: [7][0/1]	Loss: 2.2976
+Accuracy at Epoch 7: 10.0%
+Epoch: [8][0/1]	Loss: 2.2971
+Accuracy at Epoch 8: 10.0%
+Epoch: [9][0/1]	Loss: 2.3036
+Accuracy at Epoch 9: 10.0%
+Epoch: [10][0/1]	Loss: 2.2953
+Accuracy at Epoch 10: 10.0%
+Epoch: [11][0/1]	Loss: 2.2947
+Accuracy at Epoch 11: 10.0%
+Epoch: [12][0/1]	Loss: 2.2895
+Accuracy at Epoch 12: 10.0%
+Epoch: [13][0/1]	Loss: 2.2893
+Accuracy at Epoch 13: 10.0%
+Epoch: [14][0/1]	Loss: 2.2760
+Accuracy at Epoch 14: 10.0%
+Epoch: [15][0/1]	Loss: 2.2753
+Accuracy at Epoch 15: 10.0%
+Epoch: [16][0/1]	Loss: 2.2604
+Accuracy at Epoch 16: 10.0%
+Epoch: [17][0/1]	Loss: 2.2498
+Accuracy at Epoch 17: 9.7%
+Epoch: [18][0/1]	Loss: 2.2473
+Accuracy at Epoch 18: 10.2%
+Epoch: [19][0/1]	Loss: 2.2484
+Accuracy at Epoch 19: 10.6%
+Epoch: [20][0/1]	Loss: 2.2115
+Accuracy at Epoch 20: 9.6%
+Epoch: [21][0/1]	Loss: 2.2459
+Accuracy at Epoch 21: 10.4%
+Epoch: [22][0/1]	Loss: 2.2154
+Accuracy at Epoch 22: 11.1%
+Epoch: [23][0/1]	Loss: 2.2394
+Accuracy at Epoch 23: 11.1%
+Epoch: [24][0/1]	Loss: 2.2430
+Accuracy at Epoch 24: 10.6%
+Epoch: [25][0/1]	Loss: 2.2128
+Accuracy at Epoch 25: 9.9%
+Epoch: [26][0/1]	Loss: 2.1636
+Accuracy at Epoch 26: 10.2%
+Epoch: [27][0/1]	Loss: 2.1889
+Accuracy at Epoch 27: 9.2%
+Epoch: [28][0/1]	Loss: 2.1475
+Accuracy at Epoch 28: 10.2%
+Epoch: [29][0/1]	Loss: 2.1502
+Accuracy at Epoch 29: 8.9%
+Epoch: [30][0/1]	Loss: 2.1628
+Accuracy at Epoch 30: 8.5%
+Epoch: [31][0/1]	Loss: 2.1282
+Accuracy at Epoch 31: 7.5%
+Epoch: [32][0/1]	Loss: 2.1375
+Accuracy at Epoch 32: 8.5%
+Epoch: [33][0/1]	Loss: 2.1287
+Accuracy at Epoch 33: 7.3%
+Epoch: [34][0/1]	Loss: 2.0902
+Accuracy at Epoch 34: 8.3%
+Epoch: [35][0/1]	Loss: 2.0893
+Accuracy at Epoch 35: 9.0%
+Epoch: [36][0/1]	Loss: 2.0636
+Accuracy at Epoch 36: 7.8%
+Epoch: [37][0/1]	Loss: 2.0003
+Accuracy at Epoch 37: 8.6%
+Epoch: [38][0/1]	Loss: 2.0225
+Accuracy at Epoch 38: 7.8%
+Epoch: [39][0/1]	Loss: 2.0145
+Accuracy at Epoch 39: 8.4%
+Epoch: [40][0/1]	Loss: 2.0089
+Accuracy at Epoch 40: 8.1%
+Epoch: [41][0/1]	Loss: 1.9446
+Accuracy at Epoch 41: 8.3%
+Epoch: [42][0/1]	Loss: 1.9876
+Accuracy at Epoch 42: 9.0%
+Epoch: [43][0/1]	Loss: 1.9678
+Accuracy at Epoch 43: 9.2%
+Epoch: [44][0/1]	Loss: 1.9393
+Accuracy at Epoch 44: 9.6%
+Epoch: [45][0/1]	Loss: 1.9233
+Accuracy at Epoch 45: 9.2%
+Epoch: [46][0/1]	Loss: 1.8123
+Accuracy at Epoch 46: 8.4%
+Epoch: [47][0/1]	Loss: 1.9283
+Accuracy at Epoch 47: 9.6%
+Epoch: [48][0/1]	Loss: 1.7304
+Accuracy at Epoch 48: 9.7%
+Epoch: [49][0/1]	Loss: 1.9436
+Accuracy at Epoch 49: 8.4%
+Epoch: [50][0/1]	Loss: 1.7629
+Accuracy at Epoch 50: 8.6%
+Epoch: [51][0/1]	Loss: 1.8971
+Accuracy at Epoch 51: 9.2%
+Epoch: [52][0/1]	Loss: 1.6864
+Accuracy at Epoch 52: 9.3%
+Epoch: [53][0/1]	Loss: 1.9169
+Accuracy at Epoch 53: 9.0%
+Epoch: [54][0/1]	Loss: 1.6124
+Accuracy at Epoch 54: 9.5%
+Epoch: [55][0/1]	Loss: 1.7763
+Accuracy at Epoch 55: 9.5%
+Epoch: [56][0/1]	Loss: 1.5924
+Accuracy at Epoch 56: 8.8%
+Epoch: [57][0/1]	Loss: 1.6144
+Accuracy at Epoch 57: 10.9%
+Epoch: [58][0/1]	Loss: 1.6131
+Accuracy at Epoch 58: 10.2%
+Epoch: [59][0/1]	Loss: 1.4946
+Accuracy at Epoch 59: 9.8%
+Epoch: [60][0/1]	Loss: 1.5261
+Accuracy at Epoch 60: 11.0%
+Epoch: [61][0/1]	Loss: 1.4480
+Accuracy at Epoch 61: 9.5%
+Epoch: [62][0/1]	Loss: 1.3982
+Accuracy at Epoch 62: 9.5%
+Epoch: [63][0/1]	Loss: 1.4678
+Accuracy at Epoch 63: 10.2%
+Epoch: [64][0/1]	Loss: 1.3306
+Accuracy at Epoch 64: 8.7%
+Epoch: [65][0/1]	Loss: 1.4060
+Accuracy at Epoch 65: 9.0%
+Epoch: [66][0/1]	Loss: 1.3225
+Accuracy at Epoch 66: 9.9%
+Epoch: [67][0/1]	Loss: 1.1587
+Accuracy at Epoch 67: 10.0%
+Epoch: [68][0/1]	Loss: 1.1898
+Accuracy at Epoch 68: 8.7%
+Epoch: [69][0/1]	Loss: 1.3356
+Accuracy at Epoch 69: 11.5%
+Epoch: [70][0/1]	Loss: 1.0383
+Accuracy at Epoch 70: 11.4%
+Epoch: [71][0/1]	Loss: 1.0760
+Accuracy at Epoch 71: 8.7%
+Epoch: [72][0/1]	Loss: 1.2819
+Accuracy at Epoch 72: 10.9%
+Epoch: [73][0/1]	Loss: 1.0445
+Accuracy at Epoch 73: 10.4%
+Epoch: [74][0/1]	Loss: 0.8890
+Accuracy at Epoch 74: 9.5%
+Epoch: [75][0/1]	Loss: 1.0242
+Accuracy at Epoch 75: 11.2%
+Epoch: [76][0/1]	Loss: 0.9268
+Accuracy at Epoch 76: 10.3%
+Epoch: [77][0/1]	Loss: 0.8027
+Accuracy at Epoch 77: 10.1%
+Epoch: [78][0/1]	Loss: 0.8448
+Accuracy at Epoch 78: 11.1%
+Epoch: [79][0/1]	Loss: 0.8364
+Accuracy at Epoch 79: 9.4%
+Epoch: [80][0/1]	Loss: 0.9179
+Accuracy at Epoch 80: 10.3%
+Epoch: [81][0/1]	Loss: 0.7623
+Accuracy at Epoch 81: 8.9%
+Epoch: [82][0/1]	Loss: 0.6771
+Accuracy at Epoch 82: 10.8%
+Epoch: [83][0/1]	Loss: 0.5792
+Accuracy at Epoch 83: 10.6%
+Epoch: [84][0/1]	Loss: 0.5136
+Accuracy at Epoch 84: 10.4%
+Epoch: [85][0/1]	Loss: 0.5162
+Accuracy at Epoch 85: 11.5%
+Epoch: [86][0/1]	Loss: 0.5860
+Accuracy at Epoch 86: 10.0%
+Epoch: [87][0/1]	Loss: 1.0852
+Accuracy at Epoch 87: 9.8%
+Epoch: [88][0/1]	Loss: 5.0909
+Accuracy at Epoch 88: 9.2%
+Epoch: [89][0/1]	Loss: 5.1413
+Accuracy at Epoch 89: 9.7%
+Epoch: [90][0/1]	Loss: 4.1364
+Accuracy at Epoch 90: 10.8%
+Epoch: [91][0/1]	Loss: 1.1235
+Accuracy at Epoch 91: 10.2%
+Epoch: [92][0/1]	Loss: 2.4255
+Accuracy at Epoch 92: 10.5%
+Epoch: [93][0/1]	Loss: 2.4344
+Accuracy at Epoch 93: 10.2%
+Epoch: [94][0/1]	Loss: 1.3786
+Accuracy at Epoch 94: 11.3%
+Epoch: [95][0/1]	Loss: 0.9975
+Accuracy at Epoch 95: 11.5%
+Epoch: [96][0/1]	Loss: 1.3139
+Accuracy at Epoch 96: 11.0%
+Epoch: [97][0/1]	Loss: 1.6430
+Accuracy at Epoch 97: 11.0%
+Epoch: [98][0/1]	Loss: 1.6694
+Accuracy at Epoch 98: 8.5%
+Epoch: [99][0/1]	Loss: 1.6702
+Accuracy at Epoch 99: 8.7%
+Epoch: [100][0/1]	Loss: 1.5801
+Accuracy at Epoch 100: 9.0%
+Epoch: [101][0/1]	Loss: 1.4963
+Accuracy at Epoch 101: 9.6%
+Epoch: [102][0/1]	Loss: 1.4079
+Accuracy at Epoch 102: 11.8%
+Epoch: [103][0/1]	Loss: 1.3490
+Accuracy at Epoch 103: 12.1%
+Epoch: [104][0/1]	Loss: 1.3754
+Accuracy at Epoch 104: 12.2%
+Epoch: [105][0/1]	Loss: 1.4230
+Accuracy at Epoch 105: 12.5%
+Epoch: [106][0/1]	Loss: 1.4694
+Accuracy at Epoch 106: 12.4%
+Epoch: [107][0/1]	Loss: 1.4399
+Accuracy at Epoch 107: 12.0%
+Epoch: [108][0/1]	Loss: 1.3892
+Accuracy at Epoch 108: 10.9%
+Epoch: [109][0/1]	Loss: 1.3815
+Accuracy at Epoch 109: 10.4%
+Epoch: [110][0/1]	Loss: 1.3068
+Accuracy at Epoch 110: 10.7%
+Epoch: [111][0/1]	Loss: 1.2862
+Accuracy at Epoch 111: 11.4%
+Epoch: [112][0/1]	Loss: 1.2773
+Accuracy at Epoch 112: 12.4%
+Epoch: [113][0/1]	Loss: 1.2482
+Accuracy at Epoch 113: 12.2%
+Epoch: [114][0/1]	Loss: 1.2110
+Accuracy at Epoch 114: 11.9%
+Epoch: [115][0/1]	Loss: 1.1924
+Accuracy at Epoch 115: 12.5%
+Epoch: [116][0/1]	Loss: 1.1242
+Accuracy at Epoch 116: 12.3%
+Epoch: [117][0/1]	Loss: 1.1159
+Accuracy at Epoch 117: 12.0%
+Epoch: [118][0/1]	Loss: 1.1033
+Accuracy at Epoch 118: 11.9%
+Epoch: [119][0/1]	Loss: 1.0468
+Accuracy at Epoch 119: 11.6%
+Epoch: [120][0/1]	Loss: 1.0008
+Accuracy at Epoch 120: 11.6%
+Epoch: [121][0/1]	Loss: 0.9749
+Accuracy at Epoch 121: 12.0%
+Epoch: [122][0/1]	Loss: 0.9262
+Accuracy at Epoch 122: 11.3%
+Epoch: [123][0/1]	Loss: 0.8967
+Accuracy at Epoch 123: 11.3%
+Epoch: [124][0/1]	Loss: 0.8693
+Accuracy at Epoch 124: 10.8%
+Epoch: [125][0/1]	Loss: 0.8608
+Accuracy at Epoch 125: 10.7%
+Epoch: [126][0/1]	Loss: 0.8111
+Accuracy at Epoch 126: 10.2%
+Epoch: [127][0/1]	Loss: 0.7930
+Accuracy at Epoch 127: 10.4%
+Epoch: [128][0/1]	Loss: 0.7114
+Accuracy at Epoch 128: 10.0%
+Epoch: [129][0/1]	Loss: 0.6884
+Accuracy at Epoch 129: 9.9%
+Epoch: [130][0/1]	Loss: 0.6845
+Accuracy at Epoch 130: 9.9%
+Epoch: [131][0/1]	Loss: 0.6442
+Accuracy at Epoch 131: 9.7%
+Epoch: [132][0/1]	Loss: 0.6269
+Accuracy at Epoch 132: 10.2%
+Epoch: [133][0/1]	Loss: 0.5950
+Accuracy at Epoch 133: 10.3%
+Epoch: [134][0/1]	Loss: 0.5541
+Accuracy at Epoch 134: 10.9%
+Epoch: [135][0/1]	Loss: 0.5336
+Accuracy at Epoch 135: 10.7%
+Epoch: [136][0/1]	Loss: 0.5270
+Accuracy at Epoch 136: 10.5%
+Epoch: [137][0/1]	Loss: 0.4928
+Accuracy at Epoch 137: 9.9%
+Epoch: [138][0/1]	Loss: 0.4736
+Accuracy at Epoch 138: 10.4%
+Epoch: [139][0/1]	Loss: 0.4367
+Accuracy at Epoch 139: 10.8%
+Epoch: [140][0/1]	Loss: 0.4350
+Accuracy at Epoch 140: 10.6%
+Epoch: [141][0/1]	Loss: 0.4120
+Accuracy at Epoch 141: 11.0%
+Epoch: [142][0/1]	Loss: 0.3491
+Accuracy at Epoch 142: 10.9%
+Epoch: [143][0/1]	Loss: 0.3323
+Accuracy at Epoch 143: 10.6%
+Epoch: [144][0/1]	Loss: 0.3039
+Accuracy at Epoch 144: 10.8%
+Epoch: [145][0/1]	Loss: 0.2765
+Accuracy at Epoch 145: 11.0%
+Epoch: [146][0/1]	Loss: 0.2895
+Accuracy at Epoch 146: 11.2%
+Epoch: [147][0/1]	Loss: 0.2806
+Accuracy at Epoch 147: 11.3%
+Epoch: [148][0/1]	Loss: 0.2281
+Accuracy at Epoch 148: 11.2%
+Epoch: [149][0/1]	Loss: 0.2135
+Accuracy at Epoch 149: 11.4%
+Epoch: [150][0/1]	Loss: 0.1884
+Accuracy at Epoch 150: 11.4%
+Epoch: [151][0/1]	Loss: 0.1571
+Accuracy at Epoch 151: 11.3%
+Epoch: [152][0/1]	Loss: 0.1263
+Accuracy at Epoch 152: 11.4%
+Epoch: [153][0/1]	Loss: 0.1306
+Accuracy at Epoch 153: 10.8%
+Epoch: [154][0/1]	Loss: 0.0888
+Accuracy at Epoch 154: 10.7%
+Epoch: [155][0/1]	Loss: 0.0893
+Accuracy at Epoch 155: 10.6%
+Epoch: [156][0/1]	Loss: 0.0652
+Accuracy at Epoch 156: 10.8%
+Epoch: [157][0/1]	Loss: 0.0621
+Accuracy at Epoch 157: 11.0%
+Epoch: [158][0/1]	Loss: 0.0539
+Accuracy at Epoch 158: 11.3%
+Epoch: [159][0/1]	Loss: 0.0463
+Accuracy at Epoch 159: 11.0%
+Epoch: [160][0/1]	Loss: 0.0426
+Accuracy at Epoch 160: 10.9%
+Epoch: [161][0/1]	Loss: 0.0338
+Accuracy at Epoch 161: 11.1%
+Epoch: [162][0/1]	Loss: 0.0325
+Accuracy at Epoch 162: 11.0%
+Epoch: [163][0/1]	Loss: 0.0204
+Accuracy at Epoch 163: 10.9%
+Epoch: [164][0/1]	Loss: 0.0161
+Accuracy at Epoch 164: 11.1%
+Epoch: [165][0/1]	Loss: 0.0273
+Accuracy at Epoch 165: 11.1%
+Epoch: [166][0/1]	Loss: 0.0176
+Accuracy at Epoch 166: 11.3%
+Epoch: [167][0/1]	Loss: 0.0141
+Accuracy at Epoch 167: 11.3%
+Epoch: [168][0/1]	Loss: 0.0096
+Accuracy at Epoch 168: 11.1%
+Epoch: [169][0/1]	Loss: 0.0116
+Accuracy at Epoch 169: 11.1%
+Epoch: [170][0/1]	Loss: 0.0073
+Accuracy at Epoch 170: 11.4%
+Epoch: [171][0/1]	Loss: 0.0113
+Accuracy at Epoch 171: 11.3%
+Epoch: [172][0/1]	Loss: 0.0100
+Accuracy at Epoch 172: 11.3%
+Epoch: [173][0/1]	Loss: 0.0075
+Accuracy at Epoch 173: 11.2%
+Epoch: [174][0/1]	Loss: 0.0071
+Accuracy at Epoch 174: 11.0%
+Epoch: [175][0/1]	Loss: 0.0045
+Accuracy at Epoch 175: 11.1%
+Epoch: [176][0/1]	Loss: 0.0049
+Accuracy at Epoch 176: 11.0%
+Epoch: [177][0/1]	Loss: 0.0038
+Accuracy at Epoch 177: 10.9%
+Epoch: [178][0/1]	Loss: 0.0036
+Accuracy at Epoch 178: 11.0%
+Epoch: [179][0/1]	Loss: 0.0033
+Accuracy at Epoch 179: 11.0%
+Epoch: [180][0/1]	Loss: 0.0035
+Accuracy at Epoch 180: 11.1%
+Epoch: [181][0/1]	Loss: 0.0037
+Accuracy at Epoch 181: 11.3%
+Epoch: [182][0/1]	Loss: 0.0019
+Accuracy at Epoch 182: 11.4%
+Epoch: [183][0/1]	Loss: 0.0038
+Accuracy at Epoch 183: 11.1%
+Epoch: [184][0/1]	Loss: 0.0017
+Accuracy at Epoch 184: 11.0%
+Epoch: [185][0/1]	Loss: 0.0016
+Accuracy at Epoch 185: 10.8%
+Epoch: [186][0/1]	Loss: 0.0017
+Accuracy at Epoch 186: 10.9%
+Epoch: [187][0/1]	Loss: 0.0015
+Accuracy at Epoch 187: 10.9%
+Epoch: [188][0/1]	Loss: 0.0016
+Accuracy at Epoch 188: 11.1%
+Epoch: [189][0/1]	Loss: 0.0012
+Accuracy at Epoch 189: 10.7%
+Epoch: [190][0/1]	Loss: 0.0012
+Accuracy at Epoch 190: 10.5%
+Epoch: [191][0/1]	Loss: 0.0012
+Accuracy at Epoch 191: 10.7%
+Epoch: [192][0/1]	Loss: 0.0011
+Accuracy at Epoch 192: 10.7%
+Epoch: [193][0/1]	Loss: 0.0011
+Accuracy at Epoch 193: 10.8%
+Epoch: [194][0/1]	Loss: 0.0012
+Accuracy at Epoch 194: 10.9%
+Epoch: [195][0/1]	Loss: 0.0010
+Accuracy at Epoch 195: 11.1%
+Epoch: [196][0/1]	Loss: 0.0009
+Accuracy at Epoch 196: 11.0%
+Epoch: [197][0/1]	Loss: 0.0008
+Accuracy at Epoch 197: 11.0%
+Epoch: [198][0/1]	Loss: 0.0007
+Accuracy at Epoch 198: 11.0%
+Epoch: [199][0/1]	Loss: 0.0007
+Accuracy at Epoch 199: 10.9%
+Epoch: [200][0/1]	Loss: 0.0007
+Accuracy at Epoch 200: 10.8%
+Epoch: [201][0/1]	Loss: 0.0007
+Accuracy at Epoch 201: 10.7%
+Epoch: [202][0/1]	Loss: 0.0005
+Accuracy at Epoch 202: 10.6%
+Epoch: [203][0/1]	Loss: 0.0006
+Accuracy at Epoch 203: 10.6%
+Epoch: [204][0/1]	Loss: 0.0005
+Accuracy at Epoch 204: 10.8%
+Epoch: [205][0/1]	Loss: 0.0005
+Accuracy at Epoch 205: 10.7%
+Epoch: [206][0/1]	Loss: 0.0005
+Accuracy at Epoch 206: 10.7%
+Epoch: [207][0/1]	Loss: 0.0005
+Accuracy at Epoch 207: 10.7%
+Epoch: [208][0/1]	Loss: 0.0005
+Accuracy at Epoch 208: 10.6%
+Epoch: [209][0/1]	Loss: 0.0005
+Accuracy at Epoch 209: 10.6%
+Epoch: [210][0/1]	Loss: 0.0005
+Accuracy at Epoch 210: 10.7%
+Epoch: [211][0/1]	Loss: 0.0004
+Accuracy at Epoch 211: 10.7%
+Epoch: [212][0/1]	Loss: 0.0004
+Accuracy at Epoch 212: 10.8%
+Epoch: [213][0/1]	Loss: 0.0004
+Accuracy at Epoch 213: 10.7%
+Epoch: [214][0/1]	Loss: 0.0004
+Accuracy at Epoch 214: 10.7%
+Epoch: [215][0/1]	Loss: 0.0004
+Accuracy at Epoch 215: 10.7%
+Epoch: [216][0/1]	Loss: 0.0004
+Accuracy at Epoch 216: 10.6%
+Epoch: [217][0/1]	Loss: 0.0004
+Accuracy at Epoch 217: 10.6%
+Epoch: [218][0/1]	Loss: 0.0003
+Accuracy at Epoch 218: 10.6%
+Epoch: [219][0/1]	Loss: 0.0003
+Accuracy at Epoch 219: 10.7%
+Epoch: [220][0/1]	Loss: 0.0003
+Accuracy at Epoch 220: 10.7%
+Epoch: [221][0/1]	Loss: 0.0003
+Accuracy at Epoch 221: 10.7%
+Epoch: [222][0/1]	Loss: 0.0003
+Accuracy at Epoch 222: 10.7%
+Epoch: [223][0/1]	Loss: 0.0003
+Accuracy at Epoch 223: 10.7%
+Epoch: [224][0/1]	Loss: 0.0004
+Accuracy at Epoch 224: 10.8%
+Epoch: [225][0/1]	Loss: 0.0003
+Accuracy at Epoch 225: 10.7%
+Epoch: [226][0/1]	Loss: 0.0003
+Accuracy at Epoch 226: 10.7%
+Epoch: [227][0/1]	Loss: 0.0003
+Accuracy at Epoch 227: 10.7%
+Epoch: [228][0/1]	Loss: 0.0003
+Accuracy at Epoch 228: 10.7%
+Epoch: [229][0/1]	Loss: 0.0003
+Accuracy at Epoch 229: 10.7%
+Epoch: [230][0/1]	Loss: 0.0003
+Accuracy at Epoch 230: 10.7%
+Epoch: [231][0/1]	Loss: 0.0003
+Accuracy at Epoch 231: 10.7%
+Epoch: [232][0/1]	Loss: 0.0003
+Accuracy at Epoch 232: 10.8%
+Epoch: [233][0/1]	Loss: 0.0003
+Accuracy at Epoch 233: 10.7%
+Epoch: [234][0/1]	Loss: 0.0003
+Accuracy at Epoch 234: 10.7%
+Epoch: [235][0/1]	Loss: 0.0002
+Accuracy at Epoch 235: 10.7%
+Epoch: [236][0/1]	Loss: 0.0003
+Accuracy at Epoch 236: 10.7%
+Epoch: [237][0/1]	Loss: 0.0002
+Accuracy at Epoch 237: 10.7%
+Epoch: [238][0/1]	Loss: 0.0002
+Accuracy at Epoch 238: 10.7%
+Epoch: [239][0/1]	Loss: 0.0002
+Accuracy at Epoch 239: 10.7%
+Epoch: [240][0/1]	Loss: 0.0002
+Accuracy at Epoch 240: 10.7%
+Epoch: [241][0/1]	Loss: 0.0002
+Accuracy at Epoch 241: 10.8%
+Epoch: [242][0/1]	Loss: 0.0002
+Accuracy at Epoch 242: 10.7%
+Epoch: [243][0/1]	Loss: 0.0002
+Accuracy at Epoch 243: 10.7%
+Epoch: [244][0/1]	Loss: 0.0002
+Accuracy at Epoch 244: 10.7%
+Epoch: [245][0/1]	Loss: 0.0002
+Accuracy at Epoch 245: 10.7%
+Epoch: [246][0/1]	Loss: 0.0002
+Accuracy at Epoch 246: 10.7%
+Epoch: [247][0/1]	Loss: 0.0002
+Accuracy at Epoch 247: 10.7%
+Epoch: [248][0/1]	Loss: 0.0002
+Accuracy at Epoch 248: 10.7%
+Epoch: [249][0/1]	Loss: 0.0002
+Accuracy at Epoch 249: 10.7%
+Epoch: [250][0/1]	Loss: 0.0002
+Accuracy at Epoch 250: 10.7%
+Epoch: [251][0/1]	Loss: 0.0002
+Accuracy at Epoch 251: 10.6%
+Epoch: [252][0/1]	Loss: 0.0002
+Accuracy at Epoch 252: 10.6%
+Epoch: [253][0/1]	Loss: 0.0002
+Accuracy at Epoch 253: 10.6%
+Epoch: [254][0/1]	Loss: 0.0002
+Accuracy at Epoch 254: 10.6%
+Epoch: [255][0/1]	Loss: 0.0002
+Accuracy at Epoch 255: 10.6%
+Epoch: [256][0/1]	Loss: 0.0002
+Accuracy at Epoch 256: 10.5%
+Epoch: [257][0/1]	Loss: 0.0002
+Accuracy at Epoch 257: 10.5%
+Epoch: [258][0/1]	Loss: 0.0002
+Accuracy at Epoch 258: 10.5%
+Epoch: [259][0/1]	Loss: 0.0002
+Accuracy at Epoch 259: 10.5%
+Epoch: [260][0/1]	Loss: 0.0002
+Accuracy at Epoch 260: 10.5%
+Epoch: [261][0/1]	Loss: 0.0002
+Accuracy at Epoch 261: 10.5%
+Epoch: [262][0/1]	Loss: 0.0002
+Accuracy at Epoch 262: 10.5%
+Epoch: [263][0/1]	Loss: 0.0002
+Accuracy at Epoch 263: 10.5%
+Epoch: [264][0/1]	Loss: 0.0002
+Accuracy at Epoch 264: 10.5%
+Epoch: [265][0/1]	Loss: 0.0002
+Accuracy at Epoch 265: 10.5%
+Epoch: [266][0/1]	Loss: 0.0002
+Accuracy at Epoch 266: 10.5%
+Epoch: [267][0/1]	Loss: 0.0002
+Accuracy at Epoch 267: 10.5%
+Epoch: [268][0/1]	Loss: 0.0002
+Accuracy at Epoch 268: 10.5%
+Epoch: [269][0/1]	Loss: 0.0002
+Accuracy at Epoch 269: 10.5%
+Epoch: [270][0/1]	Loss: 0.0002
+Accuracy at Epoch 270: 10.5%
+Epoch: [271][0/1]	Loss: 0.0002
+Accuracy at Epoch 271: 10.5%
+Epoch: [272][0/1]	Loss: 0.0002
+Accuracy at Epoch 272: 10.5%
+Epoch: [273][0/1]	Loss: 0.0002
+Accuracy at Epoch 273: 10.5%
+Epoch: [274][0/1]	Loss: 0.0002
+Accuracy at Epoch 274: 10.5%
+Epoch: [275][0/1]	Loss: 0.0002
+Accuracy at Epoch 275: 10.5%
+Epoch: [276][0/1]	Loss: 0.0002
+Accuracy at Epoch 276: 10.5%
+Epoch: [277][0/1]	Loss: 0.0002
+Accuracy at Epoch 277: 10.5%
+Epoch: [278][0/1]	Loss: 0.0002
+Accuracy at Epoch 278: 10.5%
+Epoch: [279][0/1]	Loss: 0.0002
+Accuracy at Epoch 279: 10.5%
+Epoch: [280][0/1]	Loss: 0.0002
+Accuracy at Epoch 280: 10.5%
+Epoch: [281][0/1]	Loss: 0.0001
+Accuracy at Epoch 281: 10.5%
+Epoch: [282][0/1]	Loss: 0.0001
+Accuracy at Epoch 282: 10.5%
+Epoch: [283][0/1]	Loss: 0.0002
+Accuracy at Epoch 283: 10.5%
+Epoch: [284][0/1]	Loss: 0.0001
+Accuracy at Epoch 284: 10.5%
+Epoch: [285][0/1]	Loss: 0.0002
+Accuracy at Epoch 285: 10.5%
+Epoch: [286][0/1]	Loss: 0.0002
+Accuracy at Epoch 286: 10.5%
+Epoch: [287][0/1]	Loss: 0.0001
+Accuracy at Epoch 287: 10.5%
+Epoch: [288][0/1]	Loss: 0.0001
+Accuracy at Epoch 288: 10.5%
+Epoch: [289][0/1]	Loss: 0.0002
+Accuracy at Epoch 289: 10.5%
+Epoch: [290][0/1]	Loss: 0.0001
+Accuracy at Epoch 290: 10.5%
+Epoch: [291][0/1]	Loss: 0.0001
+Accuracy at Epoch 291: 10.5%
+Epoch: [292][0/1]	Loss: 0.0001
+Accuracy at Epoch 292: 10.5%
+Epoch: [293][0/1]	Loss: 0.0001
+Accuracy at Epoch 293: 10.5%
+Epoch: [294][0/1]	Loss: 0.0001
+Accuracy at Epoch 294: 10.5%
+Epoch: [295][0/1]	Loss: 0.0001
+Accuracy at Epoch 295: 10.5%
+Epoch: [296][0/1]	Loss: 0.0001
+Accuracy at Epoch 296: 10.5%
+Epoch: [297][0/1]	Loss: 0.0001
+Accuracy at Epoch 297: 10.5%
+Epoch: [298][0/1]	Loss: 0.0001
+Accuracy at Epoch 298: 10.5%
+Epoch: [299][0/1]	Loss: 0.0001
+Accuracy at Epoch 299: 10.5%
+Epoch: [300][0/1]	Loss: 0.0001
+Accuracy at Epoch 300: 10.5%
+Epoch: [301][0/1]	Loss: 0.0001
+Accuracy at Epoch 301: 10.5%
+Epoch: [302][0/1]	Loss: 0.0001
+Accuracy at Epoch 302: 10.5%
+Epoch: [303][0/1]	Loss: 0.0001
+Accuracy at Epoch 303: 10.5%
+Epoch: [304][0/1]	Loss: 0.0001
+Accuracy at Epoch 304: 10.5%
+Epoch: [305][0/1]	Loss: 0.0001
+Accuracy at Epoch 305: 10.5%
+Epoch: [306][0/1]	Loss: 0.0001
+Accuracy at Epoch 306: 10.5%
+Epoch: [307][0/1]	Loss: 0.0001
+Accuracy at Epoch 307: 10.5%
+Epoch: [308][0/1]	Loss: 0.0001
+Accuracy at Epoch 308: 10.5%
+Epoch: [309][0/1]	Loss: 0.0001
+Accuracy at Epoch 309: 10.5%
+Epoch: [310][0/1]	Loss: 0.0001
+Accuracy at Epoch 310: 10.5%
+Epoch: [311][0/1]	Loss: 0.0001
+Accuracy at Epoch 311: 10.5%
+Epoch: [312][0/1]	Loss: 0.0001
+Accuracy at Epoch 312: 10.5%
+Epoch: [313][0/1]	Loss: 0.0001
+Accuracy at Epoch 313: 10.5%
+Epoch: [314][0/1]	Loss: 0.0001
+Accuracy at Epoch 314: 10.5%
+Epoch: [315][0/1]	Loss: 0.0001
+Accuracy at Epoch 315: 10.5%
+Epoch: [316][0/1]	Loss: 0.0001
+Accuracy at Epoch 316: 10.5%
+Epoch: [317][0/1]	Loss: 0.0001
+Accuracy at Epoch 317: 10.5%
+Epoch: [318][0/1]	Loss: 0.0001
+Accuracy at Epoch 318: 10.5%
+Epoch: [319][0/1]	Loss: 0.0001
+Accuracy at Epoch 319: 10.5%
+Epoch: [320][0/1]	Loss: 0.0001
+Accuracy at Epoch 320: 10.5%
+Epoch: [321][0/1]	Loss: 0.0001
+Accuracy at Epoch 321: 10.5%
+Epoch: [322][0/1]	Loss: 0.0001
+Accuracy at Epoch 322: 10.5%
+Epoch: [323][0/1]	Loss: 0.0001
+Accuracy at Epoch 323: 10.5%
+Epoch: [324][0/1]	Loss: 0.0001
+Accuracy at Epoch 324: 10.5%
+Epoch: [325][0/1]	Loss: 0.0001
+Accuracy at Epoch 325: 10.5%
+Epoch: [326][0/1]	Loss: 0.0001
+Accuracy at Epoch 326: 10.5%
+Epoch: [327][0/1]	Loss: 0.0001
+Accuracy at Epoch 327: 10.5%
+Epoch: [328][0/1]	Loss: 0.0001
+Accuracy at Epoch 328: 10.5%
+Epoch: [329][0/1]	Loss: 0.0001
+Accuracy at Epoch 329: 10.5%
+Epoch: [330][0/1]	Loss: 0.0001
+Accuracy at Epoch 330: 10.5%
+Epoch: [331][0/1]	Loss: 0.0001
+Accuracy at Epoch 331: 10.5%
+Epoch: [332][0/1]	Loss: 0.0001
+Accuracy at Epoch 332: 10.5%
+Epoch: [333][0/1]	Loss: 0.0001
+Accuracy at Epoch 333: 10.5%
+Epoch: [334][0/1]	Loss: 0.0001
+Accuracy at Epoch 334: 10.5%
+Epoch: [335][0/1]	Loss: 0.0001
+Accuracy at Epoch 335: 10.5%
+Epoch: [336][0/1]	Loss: 0.0001
+Accuracy at Epoch 336: 10.5%
+Epoch: [337][0/1]	Loss: 0.0001
+Accuracy at Epoch 337: 10.4%
+Epoch: [338][0/1]	Loss: 0.0001
+Accuracy at Epoch 338: 10.4%
+Epoch: [339][0/1]	Loss: 0.0001
+Accuracy at Epoch 339: 10.4%
+Epoch: [340][0/1]	Loss: 0.0001
+Accuracy at Epoch 340: 10.4%
+Epoch: [341][0/1]	Loss: 0.0001
+Accuracy at Epoch 341: 10.4%
+Epoch: [342][0/1]	Loss: 0.0001
+Accuracy at Epoch 342: 10.4%
+Epoch: [343][0/1]	Loss: 0.0001
+Accuracy at Epoch 343: 10.4%
+Epoch: [344][0/1]	Loss: 0.0001
+Accuracy at Epoch 344: 10.4%
+Epoch: [345][0/1]	Loss: 0.0001
+Accuracy at Epoch 345: 10.4%
+Epoch: [346][0/1]	Loss: 0.0001
+Accuracy at Epoch 346: 10.4%
+Epoch: [347][0/1]	Loss: 0.0001
+Accuracy at Epoch 347: 10.4%
+Epoch: [348][0/1]	Loss: 0.0001
+Accuracy at Epoch 348: 10.4%
+Epoch: [349][0/1]	Loss: 0.0001
+Accuracy at Epoch 349: 10.4%
+Epoch: [350][0/1]	Loss: 0.0001
+Accuracy at Epoch 350: 10.4%
+Epoch: [351][0/1]	Loss: 0.0001
+Accuracy at Epoch 351: 10.5%
+Epoch: [352][0/1]	Loss: 0.0001
+Accuracy at Epoch 352: 10.5%
+Epoch: [353][0/1]	Loss: 0.0001
+Accuracy at Epoch 353: 10.5%
+Epoch: [354][0/1]	Loss: 0.0001
+Accuracy at Epoch 354: 10.5%
+Epoch: [355][0/1]	Loss: 0.0001
+Accuracy at Epoch 355: 10.5%
+Epoch: [356][0/1]	Loss: 0.0001
+Accuracy at Epoch 356: 10.5%
+Epoch: [357][0/1]	Loss: 0.0001
+Accuracy at Epoch 357: 10.5%
+Epoch: [358][0/1]	Loss: 0.0001
+Accuracy at Epoch 358: 10.5%
+Epoch: [359][0/1]	Loss: 0.0001
+Accuracy at Epoch 359: 10.5%
+Epoch: [360][0/1]	Loss: 0.0001
+Accuracy at Epoch 360: 10.5%
+Epoch: [361][0/1]	Loss: 0.0001
+Accuracy at Epoch 361: 10.5%
+Epoch: [362][0/1]	Loss: 0.0001
+Accuracy at Epoch 362: 10.5%
+Epoch: [363][0/1]	Loss: 0.0001
+Accuracy at Epoch 363: 10.5%
+Epoch: [364][0/1]	Loss: 0.0001
+Accuracy at Epoch 364: 10.5%
+Epoch: [365][0/1]	Loss: 0.0001
+Accuracy at Epoch 365: 10.5%
+Epoch: [366][0/1]	Loss: 0.0001
+Accuracy at Epoch 366: 10.5%
+Epoch: [367][0/1]	Loss: 0.0001
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 336521 ON c2-1 CANCELLED AT 2026-04-10T17:29:13 ***
+slurmstepd: error: *** STEP 336521.0 ON c2-1 CANCELLED AT 2026-04-10T17:29:13 ***
