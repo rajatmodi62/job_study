@@ -13,6 +13,7 @@ learn basics here:
 
 [ring all reduce algorithm](https://tech.preferred.jp/en/blog/technologies-behind-distributed-deep-learning-allreduce/)
 
+
 [fsdp, deepspeed, zero](https://sumanthrh.com/post/distributed-and-efficient-finetuning/)
 
 [princeton dude, new slides](https://github.com/PrincetonUniversity/multi_gpu_training/blob/main/04_model_parallel_with_fsdp/slides.pdf)
