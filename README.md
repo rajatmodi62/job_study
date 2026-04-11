@@ -29,6 +29,22 @@ ddp
     - using bucketed ring sync algorithm 
     - how does it work? look at later.
 
+
+---
+
+ddp multi-node
+
+basically, everything else in crap, just use code in 
+
+``
+distributed/princeton/multi_gpu_training/03_pytorch_lightning/multi/job.slurm
+``
+
+pytorch lightning can do that well. 
+
+
+
+
 -----
 ddp multi node srun mode 
 
@@ -67,15 +83,4 @@ srun --ntasks=2 --nodes=2 --overlap hostname
 ``
 
 ----
-
-ddp multi-node
-
-basically, everything in crap, just use code in 
-
-``
-distributed/princeton/multi_gpu_training/03_pytorch_lightning/multi/job.slurm
-``
-
-pytorch lightning can do that well. 
-
 
