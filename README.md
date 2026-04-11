@@ -1,11 +1,22 @@
-# job_study
-failed a lot of job interviews lol, time to get sherioush 
+
+# random study
+
+time to get sherioush.. (or not, hiyaaa!!!!) 
 
 - ddp 
 - fsdp 
 - tensor parallelism 
-
 - some basic llm knowledge -> look at huggingface for this hiya. 
+
+
+learn basics here:
+
+[ring all reduce algorithm](https://tech.preferred.jp/en/blog/technologies-behind-distributed-deep-learning-allreduce/)
+
+[fsdp, deepspeed, zero](https://sumanthrh.com/post/distributed-and-efficient-finetuning/)
+
+[princeton dude, new slides](https://github.com/PrincetonUniversity/multi_gpu_training/blob/main/04_model_parallel_with_fsdp/slides.pdf)
+
 
 
 ddp
@@ -54,6 +65,16 @@ check node handshake
 srun --ntasks=2 --nodes=2 --overlap hostname
 ``
 
+----
 
+ddp multi-node
+
+basically, everything in crap, just use code in 
+
+``
+distributed/princeton/multi_gpu_training/03_pytorch_lightning/multi/job.slurm
+``
+
+pytorch lightning can do that well. 
 
 

@@ -116,7 +116,7 @@ trainer = Trainer(
     strategy='ddp',
     precision=32,
     enable_progress_bar=False,
-    max_epochs=10)
+    max_epochs=100000)
 
 trainer.fit(model, cifar10_dm)
 trainer.test(model, datamodule=cifar10_dm)
